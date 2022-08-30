@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    /* font-family: 'Permanent Marker', cursive; */
+    font-family: 'Didact Gothic', sans-serif;
+
+}
+header, footer{
+    clear: both;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: '🏅  ';
+    /* list-style-position: inside;
+    text-align: center; */
+    margin-left: 2px;
+    font-size: 30px; /* was 22px before  */
+}
+/* input{
+    height: 31px;
+    font-size: 22px;
+} */
+/* body{
+    overflow-x:hidden;
+} */
+.bg-color-one{
+    background-image: linear-gradient(to bottom right,#E684CB,#ABC1E1,#6DE18A,#EDDA51);
+    background-repeat: no-repeat;
+    height: 850px;
+    
+}
+.bg-color-one-no-height{
+    background-image: linear-gradient(to bottom right,#E684CB,#ABC1E1,#6DE18A,#EDDA51);
+    background-repeat: no-repeat;
+}
+#emoji-size-up{
+    font-size: 30px;
+}
+.chicken-emoji-size{
+    font-size: 40px;
+}
+.homepage-section-one{
+    float: left;
+    width: 50%;
+}
+.homepage-right-section{
+    /* border-top: 2px solid #3883D0;
+    border-bottom: 2px solid #3883D0;
+    border-left: 2px solid #3883D0;
+    border-right: 0px;
+    border-radius: 15px 0px 0px 15px; */
+    border: #3883D0 solid 2px;
+    border-radius: 15px;
+    height: auto;
+    background-color: #9BBBDC;
+}
+.homepage-text-position{
+    text-align: center;
+}
+#homepage-right-marg{
+    margin-top: 13px;
+}
+#homepage-session{
+    font-family: 'Indie Flower', cursive;
+    /* color: #BD242B; */
+}
+#sessionpage-font{
+    font-family: 'Rubik Wet Paint', cursive;
+    color: #BD242B;
+    
+}
+.list-spacing{
+    padding-bottom: 10px;
+}
+.zenter{
+        width: 100%;
+        text-align: center;
+}
+.text-field-week1{
+    width: 50%;
+}
+.text-single-emoji{
+    width: 45px;
+}
+#comment-style{
+    /*font-family: 'Alegreya', serif;
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Amatic SC', cursive;
+font-family: 'Chakra Petch', sans-serif;
+font-family: 'Didact Gothic', sans-serif;
+font-family: 'Dosis', sans-serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Play', sans-serif;
+font-family: 'Rubik Moonrocks', cursive;
+font-family: 'Rubik Wet Paint', cursive;*/
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 22px; 
+}
+.bbar{
+    text-decoration: line-through black;
+    text-decoration-thickness: 1.5rem;
+}
