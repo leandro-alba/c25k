@@ -4,7 +4,7 @@ const connectDB = require('./config/database')
 const homeRoutes = require('./routes/home')
 
 const week1Routes = require('./routes/week1')
-// const week2Routes = require('./routes/week2')
+const week2Routes = require('./routes/week2')
 // const week3Routes = require('./routes/week3')
 // const week4Routes = require('./routes/week4')
 // const week51Routes = require('./routes/week5s1')
@@ -23,7 +23,7 @@ app.use(express.json())
 
 app.use('/', homeRoutes)//home page
 app.use('/week1', week1Routes)
-// app.use('/week2', week2Routes)
+app.use('/week2', week2Routes)
 // app.use('/week3', week3Routes)
 // app.use('/week4', week4Routes)
 // app.use('/week5s1', week51Routes)

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏃‍♀️ Week 2 🛋️</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stopwatch.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Alfa+Slab+One&family=Amatic+SC&family=Chakra+Petch&family=Didact+Gothic&family=Dosis&family=Indie+Flower&family=Permanent+Marker&family=Play&display=swap" rel="stylesheet">
+</head>
+<body class="bg-color-one-no-height">
+    <!-- <h1>Create A Todo List By Clicking The Button Below</h1>
+    <a href="/todos"> New Todo List</a> -->
+    <h1>Welcome to Week 2!</h1>
+    
+    <!-- <h3>To complete Week 1 do the following below and repeat this 3 times during the week.</h3> -->
+    <ul>
+        <li class="list-spacing task1">warm up -> 5 minute WALK 🚶‍♀️ </li>
+        <!-- <li class="list-spacing">repeat 2 times -> 90 seconds JOG 🏃‍♀️ then 90 seconds WALK 🚶‍♀️ </li><input type="text" placeholder="track here" class="text-single-emoji">
+        <li class="list-spacing">repeat 2 times -> 3 minute JOG 🏃‍♀️ then 3 minute WALK 🚶‍♀️ </li><input type="text" placeholder="track here" class="text-single-emoji"> -->
+        <li class="list-spacing task2">90 second JOG 🏃‍♀️ </li>
+        <li class="list-spacing task3">90 second WALK 🚶‍♀️ </li><br>
+        <li class="list-spacing task4">90 second JOG 🏃‍♀️ </li>
+        <li class="list-spacing task5">90 second WALK 🚶‍♀️ </li><br>
+        <li class="list-spacing task6">3 minute JOG 🏃‍♀️ </li>
+        <li class="list-spacing task7">3 minute WALK 🚶‍♀️ </li><br>
+        <li class="list-spacing task8">3 minute JOG 🏃‍♀️ </li>
+        <li class="list-spacing task9">3 minute WALK 🚶‍♀️ </li><br>
+        <li class="list-spacing task10">optional $ -> 2 minute JOG 🏃‍♀️ </li>
+        <li class="list-spacing task11">cool down -> 5 minute WALK 🚶‍♀️ </li>
+    </ul>
+    <!--  stopwatch -->
+    <section class="wrapper">
+        <section class="time">
+            <span class="hour ">00</span>
+            <span class="colon ">:</span>
+            <span class="minute ">00</span>
+            <span class="colon ">:</span>
+            <span class="second ">00</span>
+            <span class="colon ms-colon ">:</span>
+            <span class="millisecond ">00</span>
+        </section>
+        <section class="buttons">
+            <button class="start">▶️</button>
+            <button class="stop">⏹️</button>
+            <button class="reset">🔄</button>
+        </section>
+    </section>
+    <!-- stopwatch end -->
+    <br><br>
+    <section class="zenter">
+        <a href="/">__<span class="chicken-emoji-size">🏃‍♀️</span>__</a>
+    </section>
+    <!-- comment section -->
+    <!-- <h1>User Progress</h1> -->
+    <!-- <h2># of users who completed week 1!: <%= left %></h2> -->
+    <ul>
+    <% week2s.forEach( el => { %>
+        <li class='week2Item' data-id='<%=el._id%>'>
+            <span id="comment-style" class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.week2+'_.'+el.date%>🏁</span>
+            <!-- <span class='comment-font-style <%= el.completed === true ? 'completed' : 'not'%>'><%= el.week2+`   ${new Date()}`%></span> -->
+            <!-- <span class='del'> Delete </span> -->
+        </li>
+    <% }) %>    
+    </ul>
+
+    <form action="/week2/createWeek2" method='POST' class="zenter">
+        <input type="text" placeholder="Enter your alias here" name='week2Item'>
+        <input type="submit">
+    </form><br><br><br>
+    <!-- comment section END -->
+
+    <script src="js/stopwatch.js"></script>
+    <script src="js/week2.js"></script>
+</body>
+</html>
