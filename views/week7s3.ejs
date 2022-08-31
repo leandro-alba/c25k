@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏃‍♀️ Week 7 🛋️</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stopwatch.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Alfa+Slab+One&family=Amatic+SC&family=Chakra+Petch&family=Didact+Gothic&family=Dosis&family=Indie+Flower&family=Permanent+Marker&family=Play&family=Rubik+Moonrocks&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+</head>
+<body class="bg-color-one-no-height">
+    
+    <h1>Welcome to Week 7!</h1>
+    <h2 id="sessionpage-font">Session 3</h2>
+    
+    <ul>
+        <li class="list-spacing task1">warm up -> 5 minute WALK 🚶‍♀️ </li>
+        <!-- <li class="list-spacing">3 minutes JOG 🏃‍♀️ then 90 seconds WALK 🚶‍♀️ </li><input type="text" placeholder="track here" class="text-single-emoji"> -->
+        <li class="list-spacing task2">5 minute JOG 🏃‍♀️ </li>
+        <li class="list-spacing task3">2 minute WALK 🚶‍♀️ </li><br>
+        <!-- <li class="list-spacing">5 minutes JOG 🏃‍♀️ then 2.5 minutes WALK 🚶‍♀️ </li><input type="text" placeholder="track here" class="text-single-emoji"> -->
+        <li class="list-spacing task4">5 minute JOG 🏃‍♀️ </li>
+        <li class="list-spacing task5">2 minute WALK 🚶‍♀️ </li><br>
+        <li class="list-spacing task6">5 minute JOG 🏃‍♀️ </li>
+        <li class="list-spacing task7">2 minute WALK 🚶‍♀️ </li><br>
+        <li class="list-spacing task8">5 minute JOG 🏃‍♀️ </li>
+        <li class="list-spacing task9">2 minute WALK 🚶‍♀️ </li><br>
+        <li class="list-spacing task10">5 minute JOG 🏃‍♀️ </li>
+        <li class="list-spacing task11">2 minute WALK 🚶‍♀️ </li><br>
+        <li class="list-spacing task12">5 minute JOG 🏃‍♀️ </li>
+        <li class="list-spacing task13">2 minute WALK 🚶‍♀️ </li><br>
+        <li class="list-spacing task14">cool down -> 5 minute WALK 🚶‍♀️ </li>
+    </ul>
+    <!--  stopwatch -->
+    <section class="wrapper">
+        <section class="time">
+            <span class="hour ">00</span>
+            <span class="colon ">:</span>
+            <span class="minute ">00</span>
+            <span class="colon ">:</span>
+            <span class="second ">00</span>
+            <span class="colon ms-colon ">:</span>
+            <span class="millisecond ">00</span>
+        </section>
+        <section class="buttons">
+            <button class="start">▶️</button>
+            <button class="stop">⏹️</button>
+            <button class="reset">🔄</button>
+        </section>
+    </section>
+    <!-- stopwatch end -->
+    <br><br>
+    <section class="zenter">
+        <a href="/">__<span class="chicken-emoji-size">🏃‍♀️</span>__</a>
+    </section>
+    <!-- comment section -->
+  
+    <ul>
+    <% week7s3s.forEach( el => { %>
+        <li class='week7s3Item' data-id='<%=el._id%>'>
+            <span id="comment-style" class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.week7s3+'_.'+el.date%>🏁</span>
+            <!-- <span class='del'> Delete </span>             -->
+        </li>
+    <% }) %>    
+    </ul>
+
+    <form action="/week7s3/createWeek7" method='POST' class="zenter">
+        <input type="text" placeholder="Enter your alias here" name='week7s3Item'>
+        <input type="submit">
+    </form><br><br><br>
+    <!-- comment section END -->
+
+    <script src="js/stopwatch.js"></script>
+    <script src="js/week7s3.js"></script>
+</body>
+</html>
