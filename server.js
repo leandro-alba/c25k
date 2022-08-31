@@ -11,6 +11,8 @@ const week51Routes = require('./routes/week5s1')
 const week52Routes = require('./routes/week5s2')
 const week53Routes = require('./routes/week5s3')
 const week61Routes = require('./routes/week6s1')
+const week62Routes = require('./routes/week6s2')
+const week63Routes = require('./routes/week6s3')
 
 require('dotenv').config({path: './config/.env'})
 
@@ -30,6 +32,8 @@ app.use('/week5s1', week51Routes)
 app.use('/week5s2', week52Routes)
 app.use('/week5s3', week53Routes)
 app.use('/week6s1', week61Routes)
+app.use('/week6s2', week62Routes)
+app.use('/week6s3', week63Routes)
 
 app.listen(process.env.PORT, ()=>{
     console.log('📶📶📶')
