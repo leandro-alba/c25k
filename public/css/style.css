@@ -17,6 +17,9 @@ ul{
     margin-left: 2px;
     font-size: 30px; /* was 22px before  */
 }
+button{
+    cursor: pointer;
+}
 /* input{
     height: 31px;
     font-size: 22px;
