@@ -1,4 +1,4 @@
-document.querySelector('.task1').addEventListener('click',markComplete1)
+document.querySelector('.task1').addEventListener('touchStart',markComplete1)
 document.querySelector('.task2').addEventListener('click',markComplete2)
 document.querySelector('.task3').addEventListener('click',t3)
 document.querySelector('.task4').addEventListener('click',t4)
