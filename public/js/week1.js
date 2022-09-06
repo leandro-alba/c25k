@@ -116,3 +116,17 @@ undoBtn.addEventListener('click', setOldColor)
 function setOldColor(){
     mdnParaRule.style.setProperty('color','black')
 }
+
+const check = document.querySelector('.check')
+const mdn1 = document.querySelector('.mdn1')
+const mdnParaRule1 = [...stylesheet.cssRules].find((r)=> r.selectorText === '.mdn1 span')
+check.addEventListener('click', setCheck)
+function setCheck(){
+    //const newColor = 
+    mdnParaRule1.style.setProperty('text-decoration','line-through black')
+}
+const undoBtn1 = document.querySelector('.undo1')
+undoBtn1.addEventListener('click', setOldColor1)
+function setOldColor1(){
+    mdnParaRule1.style.setProperty('text-decoration','none')
+}
