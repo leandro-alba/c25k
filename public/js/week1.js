@@ -98,7 +98,21 @@ function t18(){
     document.querySelector('.task18').classList.toggle('bbar')
 }
 
-document.querySelector('.task19').addEventListener('touchstart', e=>{
-    document.querySelector('.task19').classList.toggle('bbar')
-    //console.log(e)
-})
+// document.querySelector('.task19').addEventListener('touchstart', e=>{
+//     document.querySelector('.task19').classList.toggle('bbar')
+// })
+
+const colorBtn = document.querySelector('.color')
+const mdn = document.querySelector('.mdn')
+const stylesheet = document.styleSheets[0];
+const mdnParaRule = [...stylesheet.cssRules].find((r)=> r.selectorText === '.mdn span')
+colorBtn.addEventListener('click', setRandColor)
+function setRandColor(){
+    //const newColor = 
+    mdnParaRule.style.setProperty('color', 'white')
+}
+const undoBtn = document.querySelector('.undo')
+undoBtn.addEventListener('click', setOldColor)
+function setOldColor(){
+    mdnParaRule.style.setProperty('color','black')
+}
