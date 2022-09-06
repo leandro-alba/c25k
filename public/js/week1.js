@@ -97,3 +97,8 @@ function t17(){
 function t18(){
     document.querySelector('.task18').classList.toggle('bbar')
 }
+
+document.querySelector('.task19').addEventListener('touchstart', e=>{
+    document.querySelector('.task19').classList.toggle('bbar')
+    //console.log(e)
+})
