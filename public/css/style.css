@@ -105,6 +105,9 @@ font-family: 'Rubik Wet Paint', cursive;*/
     text-decoration: line-through black;
     text-decoration-thickness: 1.5rem;
 }
+.bb{
+    background-color: black;
+}
 .mdn span{
     color: #fff;
 }

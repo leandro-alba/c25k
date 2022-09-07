@@ -123,7 +123,7 @@ const mdnParaRule1 = [...stylesheet.cssRules].find((r)=> r.selectorText === '.md
 check.addEventListener('click', setCheck)
 function setCheck(){
     //const newColor = 
-    mdnParaRule1.style.setProperty('text-decoration','line-through black')
+    mdnParaRule1.style.setProperty('text-decoration','line-through black')//text-decoration line-through does not work iphone.
 }
 const undoBtn1 = document.querySelector('.undo1')
 undoBtn1.addEventListener('click', setOldColor1)
