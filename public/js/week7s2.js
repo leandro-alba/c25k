@@ -1,10 +1,10 @@
 document.querySelector('.task1').addEventListener('click',t1)
 document.querySelector('.task2').addEventListener('click',t2)
 document.querySelector('.task3').addEventListener('click',t3)
-document.querySelector('.task4').addEventListener('click',t4)
-document.querySelector('.task5').addEventListener('click',t5)
-document.querySelector('.task6').addEventListener('click',t6)
-document.querySelector('.task7').addEventListener('click',t7)
+// document.querySelector('.task4').addEventListener('click',t4)
+// document.querySelector('.task5').addEventListener('click',t5)
+// document.querySelector('.task6').addEventListener('click',t6)
+// document.querySelector('.task7').addEventListener('click',t7)
 
 
 const deleteBtn = document.querySelectorAll('.del')
@@ -33,23 +33,23 @@ async function deleteWeek7(){
 }
 
 function t1(){
-    document.querySelector('.task1').classList.toggle('bbar')
+    document.querySelector('.task1').classList.toggle('bb')
 }
 function t2(){
-    document.querySelector('.task2').classList.toggle('bbar')
+    document.querySelector('.task2').classList.toggle('bba')
 }
 function t3(){
-    document.querySelector('.task3').classList.toggle('bbar')
+    document.querySelector('.task3').classList.toggle('bb')
 }
-function t4(){
-    document.querySelector('.task4').classList.toggle('bbar')
-}
-function t5(){
-    document.querySelector('.task5').classList.toggle('bbar')
-}
-function t6(){
-    document.querySelector('.task6').classList.toggle('bbar')
-}
-function t7(){
-    document.querySelector('.task7').classList.toggle('bbar')
-}
+// function t4(){
+//     document.querySelector('.task4').classList.toggle('bb')
+// }
+// function t5(){
+//     document.querySelector('.task5').classList.toggle('bb')
+// }
+// function t6(){
+//     document.querySelector('.task6').classList.toggle('bb')
+// }
+// function t7(){
+//     document.querySelector('.task7').classList.toggle('bb')
+// }
