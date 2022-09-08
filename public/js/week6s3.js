@@ -33,13 +33,13 @@ async function deleteWeek6(){
 }
 
 function t1(){
-    document.querySelector('.task1').classList.toggle('bbar')
+    document.querySelector('.task1').classList.toggle('bb')
 }
 function t2(){
-    document.querySelector('.task2').classList.toggle('bbar')
+    document.querySelector('.task2').classList.toggle('bba')
 }
 function t3(){
-    document.querySelector('.task3').classList.toggle('bbar')
+    document.querySelector('.task3').classList.toggle('bb')
 }
 // function t4(){
 //     document.querySelector('.task4').classList.toggle('bbar')
