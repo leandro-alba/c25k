@@ -27,11 +27,15 @@ ul{
 /* body{
     overflow-x:hidden;
 } */
-.bg-color-one{
-    background-image: linear-gradient(to bottom right,#E684CB,#ABC1E1,#6DE18A,#EDDA51);
-    background-repeat: no-repeat;
-    height: 850px;
-    
+.bg-shoes{
+    background-image: url('https://images.unsplash.com/photo-1657627713076-9667ba9aa5dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80');
+    background-size: cover;
+    background-position: center center;   
+}
+.bg-abstract{
+    background-image: url('https://images.unsplash.com/photo-1542888743-a0323a8bd3df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2129&q=80');
+    background-size: cover;
+    background-position: center center;
 }
 .bg-color-one-no-height{
     background-image: linear-gradient(to bottom right,#E684CB,#ABC1E1,#6DE18A,#EDDA51);
@@ -118,3 +122,7 @@ font-family: 'Rubik Wet Paint', cursive;*/
 .mdn1 span{
     color: black;
 }
+
+/* @media screen {
+    
+} */
