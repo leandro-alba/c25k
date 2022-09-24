@@ -37,6 +37,12 @@ ul{
     background-size: cover;
     background-position: center center;
 }
+.bg-one-color{
+    background: #667E72;
+}
+.bg-one-color-lighter{
+    background: #C1D0EA;
+}
 .bg-color-one-no-height{
     background-image: linear-gradient(to bottom right,#E684CB,#ABC1E1,#6DE18A,#EDDA51);
     background-repeat: no-repeat;
