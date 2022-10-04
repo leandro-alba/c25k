@@ -60,7 +60,7 @@
     <ul>
     <% week2s.forEach( el => { %>
         <li class='week2Item' data-id='<%=el._id%>'>
-            <span id="comment-style" class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.week2+'_.'+el.date%>🏁</span>
+            <span id="comment-style" class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.week2+'_.'+el.date.toDateString()%>🏁</span>
             <!-- <span class='comment-font-style <%= el.completed === true ? 'completed' : 'not'%>'><%= el.week2+`   ${new Date()}`%></span> -->
             <!-- <span class='del'> Delete </span> -->
         </li>
