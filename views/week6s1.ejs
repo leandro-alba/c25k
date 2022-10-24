@@ -58,7 +58,7 @@
     <% week6s1s.forEach( el => { %>
         <li class='week6s1Item' data-id='<%=el._id%>'>
             <span id="comment-style" class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.week6s1+'_.'+el.date.toDateString()%>🏁</span>
-            <span class='del'> Delete </span>
+            <!-- <span class='del'> Delete </span> -->
         </li>
     <% }) %>    
     </ul>
