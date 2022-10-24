@@ -1,5 +1,5 @@
 # Couch to 5k tracker
-This is a personal web app I use to track my couch to 5k progress! It solved the problem of me having to switch apps on my phone while in the middle of a run. Everything I need to keep track of my run is in this web app.
+This is a personal web app I use to track my couch to 5k progress! It solved the problem of me having to switch between apps on my phone while in the middle of a run. Everything I need to keep track of my run is in this web app.
 
 **Link to project:** https://c25k.herokuapp.com/
 
