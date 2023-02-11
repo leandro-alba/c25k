@@ -130,3 +130,6 @@ function t18(){
 // function setOldColor1(){
 //     mdnParaRule1.style.setProperty('text-decoration','none')
 // }
+
+//react START:
+ReactDOM.render(<h1>Welcome to Week 1</h1>, document.querySelector('#root'))
